@@ -14,7 +14,7 @@ public abstract class AbstractEntity {
     @GeneratedValue
     private int id;
 
-    @Size(min = 3, max = 150, message = "Name can only be between 3-150 characters in length.")
+    @Size(min = 3, max = 150, message = "Name can only be between 3-150 characters.")
     @NotBlank(message = "Name required, please enter a name between 3-150 characters.")
     private String name;
 
